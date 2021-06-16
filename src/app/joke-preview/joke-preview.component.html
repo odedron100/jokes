@@ -1,0 +1,5 @@
+<section [ngClass]="isInModal === true ? 'suggested-joke' : 'joke'" (click)="onOpenJokeModal(joke)">
+  <div class="joke-details">
+    <div class="item">{{joke.setup || joke.joke || joke.delivery}}</div>
+  </div>
+</section>

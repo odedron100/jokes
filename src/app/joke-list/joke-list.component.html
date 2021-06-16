@@ -1,0 +1,5 @@
+<ul [ngClass]="isInModal === true ? 'suggested-joke-list' : 'joke-list'">
+  <li class="joke" *ngFor="let joke of jokes">
+    <app-joke-preview (jokeIdToWatch)="onOpenJokeModal($event)" [joke]="joke" [isInModal]="isInModal"></app-joke-preview>
+  </li>
+</ul>

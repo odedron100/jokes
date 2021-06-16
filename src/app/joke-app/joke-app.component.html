@@ -1,1 +1,7 @@
-<p>joke-app works!</p>
+<section class="joke-app">
+  <app-joke-filter (jokesAfterFilter)="onFilter($event)"></app-joke-filter>
+  <div>
+    <app-joke-list *ngIf="jokes" (jokeIdToWatch)="openJokeModal($event)" [jokes]="jokes"></app-joke-list>
+  </div>
+  <app-joke-modal *ngIf="activeJoke" (jokeIdToWatch)="openJokeModal($event)" (closeJoke)="closeJokeModal()" [activeJoke]="activeJoke" [jokes]="jokes"></app-joke-modal>
+</section>

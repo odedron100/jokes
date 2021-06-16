@@ -1,0 +1,23 @@
+<section class="modal-overlay">
+  <div class="modal">
+      <button class="close-modal" (click)="onCloseJokeModal()"><i class="fas fa-times"></i></button>
+      <header>
+        {{activeJoke.type}}
+      </header>
+      <div class="main-modal">
+        <main>
+          <div *ngIf="activeJoke.joke" class="joke">
+              {{activeJoke.joke}}
+          </div>
+          <div else class="joke-with-setup">
+              <div class="item setup">{{activeJoke.setup}}</div>
+              <div class="item delivery">{{activeJoke.delivery}}</div>
+          </div>
+        </main>
+        <footer class="suggested-jokes" *ngIf="suggestedJokes">
+            <h1>More jokes...</h1>
+            <app-joke-list (jokeIdToWatch)="onOpenJokeModal($event)" [jokes]="suggestedJokes" [isInModal]="true"></app-joke-list>
+        </footer>
+      </div>
+  </div>
+</section>

@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./json-jokes.component.css']
 })
 export class JsonJokesComponent implements OnInit {
-
-  jokes : [
+  jokes = [
     {
         "category": "Programming",
         "type": "twopart",

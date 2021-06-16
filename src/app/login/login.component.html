@@ -1,0 +1,13 @@
+ <section class="login-container">
+    <form class='login'>
+        <h1>LOGIN</h1>
+        <h1 *ngIf="eroor" class="eroor">{{eroor}}</h1>
+        <div>
+            <input  required type="text" [(ngModel)]="user.username" (ngModelChange)="modelChangeUsername($event)" name="username" placeholder="Username"/>
+        </div>
+        <div>
+            <input required type="password" [(ngModel)]="user.password" (ngModelChange)="modelChangePassword($event)"  name="password" placeholder="Password" />
+        </div>
+        <button class="login-button" (click)="onLogin()">Login</button>
+    </form>
+</section>

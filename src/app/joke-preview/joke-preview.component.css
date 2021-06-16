@@ -1,0 +1,39 @@
+.joke{
+  height: 200px;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  background-position: center;
+  /* background-size: 100%; */
+  transition: all ease-in-out 0.15s;
+  opacity: 0.7;
+  filter: blur(1.5px);
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  /* transform: translateY(2000px); */
+}
+
+.joke:hover{
+  /* background-size: 120%; */
+  filter: blur(0px);
+  opacity: 1;
+}
+
+.suggested-joke{
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 130px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+
+
+.joke-details{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  overflow: hidden;
+}
