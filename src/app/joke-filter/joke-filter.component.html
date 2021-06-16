@@ -1,3 +1,7 @@
  <section class="joke-filter">
-    <input type="text" id="joke" name="joke" value={joke} placeholder="Search a joke.." [(ngModel)]="jokesToSearch" (input)="onChangeFilter(jokesToSearch)"/>
+     <mat-form-field class="example-full-width">
+        <mat-label>Search a joke..</mat-label>
+        <input matInput type="text" id="joke" name="joke" value={joke} placeholder="Search a joke.." [(ngModel)]="jokesToSearch" (input)="onChangeFilter(jokesToSearch)"/>
+    </mat-form-field>
+    <!-- <input type="text" id="joke" name="joke" value={joke} placeholder="Search a joke.." [(ngModel)]="jokesToSearch" (input)="onChangeFilter(jokesToSearch)"/> -->
 </section>

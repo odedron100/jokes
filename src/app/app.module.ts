@@ -13,6 +13,10 @@ import { JokeModalComponent } from './joke-modal/joke-modal.component';
 import { LoginComponent } from './login/login.component';
 import { JokeFilterComponent } from './joke-filter/joke-filter.component';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,6 +35,10 @@ import { MatSliderModule } from '@angular/material/slider';
     HttpClientModule,
     AppRoutingModule,
     MatSliderModule,
+    MatInputModule,
+    MatCardModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

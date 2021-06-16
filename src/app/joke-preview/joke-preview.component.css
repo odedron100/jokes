@@ -8,8 +8,12 @@
   transition: all ease-in-out 0.15s;
   opacity: 0.7;
   filter: blur(1.5px);
-  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  /* box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%); */
   /* transform: translateY(2000px); */
+}
+
+mat-card{
+  height: 150px;
 }
 
 .joke:hover{
@@ -25,7 +29,9 @@
   width: 130px;
   padding: 10px;
   cursor: pointer;
-  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  overflow: hidden;
+  height: 130px;
+  /* box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%); */
 }
 
 
