@@ -12,6 +12,7 @@ import { JokePreviewComponent } from './joke-preview/joke-preview.component';
 import { JokeModalComponent } from './joke-modal/joke-modal.component';
 import { LoginComponent } from './login/login.component';
 import { JokeFilterComponent } from './joke-filter/joke-filter.component';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { JokeFilterComponent } from './joke-filter/joke-filter.component';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
+    MatSliderModule,
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

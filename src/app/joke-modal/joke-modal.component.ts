@@ -22,7 +22,6 @@ export class JokeModalComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('this.activeJoke', this.activeJoke);
     this.getRandomJokes()
   }
 

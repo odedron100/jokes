@@ -45,7 +45,6 @@ export class JokeService {
             if (filterBy) {
                 jokesToReturn = this.getFilter(filterBy)
             }
-            console.log('jokesToReturn', jokesToReturn);
             resolve(this.sort(jokesToReturn))
         })
     }
@@ -60,7 +59,6 @@ export class JokeService {
 
     save(toy) {
         const updateJoke = toy._id ? this.storageService.put(this.JOKES_KEY, toy) : this.storageService.post(this.JOKES_KEY, toy)
-        console.log('updateJoke', updateJoke);
         return updateJoke;
     }
 

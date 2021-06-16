@@ -42,7 +42,6 @@ export class JokeAppComponent implements OnInit {
 
   closeJokeModal(){
     this.activeJoke = null;
-    console.log('this.activeJoke', this.activeJoke);
   }
 
 }
